@@ -51,8 +51,7 @@
                       <p class="text-center mb-2 text-gray-600">Area (A) = w ×      I</p>
                       <div class="flex mb-6">
                         <input id="rec-w" class="w-24 h-8 text-xl p-3 bg-gray-100 focus:border-2 rounded-md" type="text" placeholder="w"><span class="mr-2 ml-2 text-gray-600">cm</span>
-                        <input id="rec-l" class="w-24 h-8 text-xl p-3 rounded-md bg-gray-100 focus:border-2" type="text" placeholder="l"><span class="mr-4 ml-2 text-gray-600">cm</span>
-                       
+                        <input id="rec-l" class="w-24 h-8 text-xl p-3 rounded-md bg-gray-100 focus:border-2" type="text" placeholder="l"><span class="mr-4 ml-2 text-gray-600">cm</span>                       
                       </div>
                       <div class="card-actions justify-center">
                         <button class="btn btn-primary w-full" onclick="calrecArea()">Calculate</button>
@@ -63,22 +62,18 @@
                   <div class="card bg-base-100 w-80 shadow-xl">
                     <figure>
                       <img
-                        src="images/triangle.png"
-                        alt="Triangle" />
+                        src="images/parallelogram.png"
+                        alt="Parallelogram" />
                     </figure>
                     <div class="card-body">
-                      <h2 class="card-title justify-center">Triangle</h2>
-                      <p class="text-center mb-2 text-gray-600">Area (A) = 0.5 × b × h</p>
+                      <h2 class="card-title justify-center">Parallelogram</h2>
+                      <p class="text-center mb-2 text-gray-600">Area (A) = b × h</p>
                       <div class="flex mb-6">
-                        <input id="tri-b" class="w-24 h-8 text-xl p-3 bg-gray-100 focus:border-2 rounded-md" type="text" placeholder="b"><span class="mr-2 ml-2 text-gray-600">cm</span>
-                        <input id="tri-h" class="w-24 h-8 text-xl p-3 rounded-md bg-gray-100 focus:border-2" type="text" placeholder="h"><span class="mr-4 ml-2 text-gray-600">cm</span>
-                       
-                      </div>
-                      <!-- <p>Area: <span id="tri-area"></span><span> cm<sup>2</sup></p> -->
-                       
-
+                        <input id="para-b" class="w-24 h-8 text-xl p-3 bg-gray-100 focus:border-2 rounded-md" type="text" placeholder="b"><span class="mr-2 ml-2 text-gray-600">cm</span>
+                        <input id="para-h" class="w-24 h-8 text-xl p-3 rounded-md bg-gray-100 focus:border-2" type="text" placeholder="h"><span class="mr-4 ml-2 text-gray-600">cm</span>                      
+                      </div>   
                       <div class="card-actions justify-center">
-                        <button class="btn btn-primary w-full" onclick="caltriArea()">Calculate</button>
+                        <button class="btn btn-primary w-full" onclick="calparaArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -86,15 +81,15 @@
                   <div class="card bg-base-100 w-80 shadow-xl">
                     <figure>
                       <img
-                        src="images/triangle.png"
-                        alt="Triangle" />
+                        src="images/rhombus.png"
+                        alt="Rhombus" />
                     </figure>
                     <div class="card-body">
-                      <h2 class="card-title justify-center">Triangle</h2>
-                      <p class="text-center mb-2 text-gray-600">Area (A) = 0.5 × b × h</p>
+                      <h2 class="card-title justify-center">Rhombus</h2>
+                      <p class="text-center mb-2 text-gray-600">Area (A) = 0.5 × d<sub>1</sub> × d<sub>2</sub></p>
                       <div class="flex mb-6">
-                        <input id="tri-b" class="w-24 h-8 text-xl p-3 bg-gray-100 focus:border-2 rounded-md" type="text" placeholder="b"><span class="mr-2 ml-2 text-gray-600">cm</span>
-                        <input id="tri-h" class="w-24 h-8 text-xl p-3 rounded-md bg-gray-100 focus:border-2" type="text" placeholder="h"><span class="mr-4 ml-2 text-gray-600">cm</span>
+                        <input id="rho-b" class="w-24 h-8 text-xl p-3 bg-gray-100 focus:border-2 rounded-md" type="text" placeholder="d1"><span class="mr-2 ml-2 text-gray-600">cm</span>
+                        <input id="rho-h" class="w-24 h-8 text-xl p-3 rounded-md bg-gray-100 focus:border-2" type="text" placeholder="h"><span class="mr-4 ml-2 text-gray-600">cm</span>
                        
                       </div>
                       <!-- <p>Area: <span id="tri-area"></span><span> cm<sup>2</sup></p> -->
@@ -160,6 +155,9 @@
          </div>
     </main>
     <script src="scripts/triangle-cal.js"></script>
+    <script src="scripts/rectangle-cal.js"></script>
+    <script src="scripts/parallelogram.js"></script>
+    <script src="scripts/rectangle-cal.js"></script>
     <script src="scripts/rectangle-cal.js"></script>
 </body>
 </html>
