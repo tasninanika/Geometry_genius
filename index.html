@@ -111,11 +111,8 @@
                         <input id="pen-b" class="w-24 h-8 text-xl p-3 rounded-md bg-gray-100 focus:border-2" type="text" placeholder="b"><span class="mr-4 ml-2 text-gray-600">cm</span>
                        
                       </div>
-                      <!-- <p>Area: <span id="tri-area"></span><span> cm<sup>2</sup></p> -->
-                       
-
                       <div class="card-actions justify-center">
-                        <button class="btn btn-primary w-full" onclick="caltriArea()">Calculate</button>
+                        <button class="btn btn-primary w-full" onclick="calpenArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -123,22 +120,19 @@
                   <div class="card bg-base-100 w-80 shadow-xl">
                     <figure>
                       <img
-                        src="images/triangle.png"
-                        alt="Triangle" />
+                        src="images/ellipse.png"
+                        alt="ellipse" />
                     </figure>
                     <div class="card-body">
-                      <h2 class="card-title justify-center">Triangle</h2>
-                      <p class="text-center mb-2 text-gray-600">Area (A) = 0.5 × b × h</p>
+                      <h2 class="card-title justify-center">Ellipse</h2>
+                      <p class="text-center mb-2 text-gray-600">Area (A) = πab</p>
                       <div class="flex mb-6">
-                        <input id="tri-b" class="w-24 h-8 text-xl p-3 bg-gray-100 focus:border-2 rounded-md" type="text" placeholder="b"><span class="mr-2 ml-2 text-gray-600">cm</span>
-                        <input id="tri-h" class="w-24 h-8 text-xl p-3 rounded-md bg-gray-100 focus:border-2" type="text" placeholder="h"><span class="mr-4 ml-2 text-gray-600">cm</span>
+                        <input id="ell-a" class="w-24 h-8 text-xl p-3 bg-gray-100 focus:border-2 rounded-md" type="text" placeholder="a"><span class="mr-2 ml-2 text-gray-600">cm</span>
+                        <input id="ell-b" class="w-24 h-8 text-xl p-3 rounded-md bg-gray-100 focus:border-2" type="text" placeholder="b"><span class="mr-4 ml-2 text-gray-600">cm</span>
                        
                       </div>
-                      <!-- <p>Area: <span id="tri-area"></span><span> cm<sup>2</sup></p> -->
-                       
-
                       <div class="card-actions justify-center">
-                        <button class="btn btn-primary w-full" onclick="caltriArea()">Calculate</button>
+                        <button class="btn btn-primary w-full" onclick="calellArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -154,6 +148,7 @@
     <script src="scripts/rectangle-cal.js"></script>
     <script src="scripts/parallelogram-cal.js"></script>
     <script src="scripts/rhombus-cal.js"></script>
-    <script src="scripts/rectangle-cal.js"></script>
+    <script src="scripts/pentagon-cal.js"></script>
+    <script src="scripts/ellipse-cal.js"></script>
 </body>
 </html>
