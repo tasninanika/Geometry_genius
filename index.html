@@ -25,91 +25,129 @@
                     </figure>
                     <div class="card-body">
                       <h2 class="card-title justify-center">Triangle</h2>
-                      <p class="text-center">Area (A) = 0.5 × b × h</p>
-                      <div class="flex">
-                        <input class="w-24 h-8 text-xl p-2 rounded-md" type="text" placeholder="b"><span class="mr-2 ml-2">cm</span>
-                        <input class="w-24 h-8 text-xl p-2 rounded-md" type="text" placeholder="h"><span class="mr-4 ml-2">cm</span>
+                      <p class="text-center mb-2 text-gray-600">Area (A) = 0.5 × b × h</p>
+                      <div class="flex mb-6">
+                        <input id="tri-b" class="w-24 h-8 text-xl p-3 bg-gray-100 focus:border-2 rounded-md" type="text" placeholder="b"><span class="mr-2 ml-2 text-gray-600">cm</span>
+                        <input id="tri-h" class="w-24 h-8 text-xl p-3 rounded-md bg-gray-100 focus:border-2" type="text" placeholder="h"><span class="mr-4 ml-2 text-gray-600">cm</span>
                        
                       </div>
+                      <!-- <p>Area: <span id="tri-area"></span><span> cm<sup>2</sup></p> -->
                        
 
                       <div class="card-actions justify-center">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button class="btn btn-primary w-full" onclick="caltriArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
                   <!-- rectangle -->
-                <div class="card bg-base-100 w-80 shadow-xl">
+                  <div class="card bg-base-100 w-80 shadow-xl">
                     <figure>
                       <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                        alt="Shoes" />
+                        src="images/rectangle.png"
+                        alt="Rectangle" />
                     </figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <h2 class="card-title justify-center">Rectangle</h2>
+                      <p class="text-center mb-2 text-gray-600">Area (A) = w ×      I</p>
+                      <div class="flex mb-6">
+                        <input id="rec-w" class="w-24 h-8 text-xl p-3 bg-gray-100 focus:border-2 rounded-md" type="text" placeholder="w"><span class="mr-2 ml-2 text-gray-600">cm</span>
+                        <input id="rec-l" class="w-24 h-8 text-xl p-3 rounded-md bg-gray-100 focus:border-2" type="text" placeholder="l"><span class="mr-4 ml-2 text-gray-600">cm</span>
+                       
+                      </div>
+                      <div class="card-actions justify-center">
+                        <button class="btn btn-primary w-full" onclick="calrecArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
                   <!-- parallelogram -->
-                <div class="card bg-base-100 w-80 shadow-xl">
+                  <div class="card bg-base-100 w-80 shadow-xl">
                     <figure>
                       <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                        alt="Shoes" />
+                        src="images/triangle.png"
+                        alt="Triangle" />
                     </figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <h2 class="card-title justify-center">Triangle</h2>
+                      <p class="text-center mb-2 text-gray-600">Area (A) = 0.5 × b × h</p>
+                      <div class="flex mb-6">
+                        <input id="tri-b" class="w-24 h-8 text-xl p-3 bg-gray-100 focus:border-2 rounded-md" type="text" placeholder="b"><span class="mr-2 ml-2 text-gray-600">cm</span>
+                        <input id="tri-h" class="w-24 h-8 text-xl p-3 rounded-md bg-gray-100 focus:border-2" type="text" placeholder="h"><span class="mr-4 ml-2 text-gray-600">cm</span>
+                       
+                      </div>
+                      <!-- <p>Area: <span id="tri-area"></span><span> cm<sup>2</sup></p> -->
+                       
+
+                      <div class="card-actions justify-center">
+                        <button class="btn btn-primary w-full" onclick="caltriArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
                   <!-- rhombus -->
-                <div class="card bg-base-100 w-80 shadow-xl">
+                  <div class="card bg-base-100 w-80 shadow-xl">
                     <figure>
                       <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                        alt="Shoes" />
+                        src="images/triangle.png"
+                        alt="Triangle" />
                     </figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <h2 class="card-title justify-center">Triangle</h2>
+                      <p class="text-center mb-2 text-gray-600">Area (A) = 0.5 × b × h</p>
+                      <div class="flex mb-6">
+                        <input id="tri-b" class="w-24 h-8 text-xl p-3 bg-gray-100 focus:border-2 rounded-md" type="text" placeholder="b"><span class="mr-2 ml-2 text-gray-600">cm</span>
+                        <input id="tri-h" class="w-24 h-8 text-xl p-3 rounded-md bg-gray-100 focus:border-2" type="text" placeholder="h"><span class="mr-4 ml-2 text-gray-600">cm</span>
+                       
+                      </div>
+                      <!-- <p>Area: <span id="tri-area"></span><span> cm<sup>2</sup></p> -->
+                       
+
+                      <div class="card-actions justify-center">
+                        <button class="btn btn-primary w-full" onclick="caltriArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
                   <!-- pentagon -->
-                <div class="card bg-base-100 w-80 shadow-xl">
+                  <div class="card bg-base-100 w-80 shadow-xl">
                     <figure>
                       <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                        alt="Shoes" />
+                        src="images/triangle.png"
+                        alt="Triangle" />
                     </figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <h2 class="card-title justify-center">Triangle</h2>
+                      <p class="text-center mb-2 text-gray-600">Area (A) = 0.5 × b × h</p>
+                      <div class="flex mb-6">
+                        <input id="tri-b" class="w-24 h-8 text-xl p-3 bg-gray-100 focus:border-2 rounded-md" type="text" placeholder="b"><span class="mr-2 ml-2 text-gray-600">cm</span>
+                        <input id="tri-h" class="w-24 h-8 text-xl p-3 rounded-md bg-gray-100 focus:border-2" type="text" placeholder="h"><span class="mr-4 ml-2 text-gray-600">cm</span>
+                       
+                      </div>
+                      <!-- <p>Area: <span id="tri-area"></span><span> cm<sup>2</sup></p> -->
+                       
+
+                      <div class="card-actions justify-center">
+                        <button class="btn btn-primary w-full" onclick="caltriArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
                   <!-- ellipse -->
-                <div class="card bg-base-100 w-80 shadow-xl">
+                  <div class="card bg-base-100 w-80 shadow-xl">
                     <figure>
                       <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                        alt="Shoes" />
+                        src="images/triangle.png"
+                        alt="Triangle" />
                     </figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <h2 class="card-title justify-center">Triangle</h2>
+                      <p class="text-center mb-2 text-gray-600">Area (A) = 0.5 × b × h</p>
+                      <div class="flex mb-6">
+                        <input id="tri-b" class="w-24 h-8 text-xl p-3 bg-gray-100 focus:border-2 rounded-md" type="text" placeholder="b"><span class="mr-2 ml-2 text-gray-600">cm</span>
+                        <input id="tri-h" class="w-24 h-8 text-xl p-3 rounded-md bg-gray-100 focus:border-2" type="text" placeholder="h"><span class="mr-4 ml-2 text-gray-600">cm</span>
+                       
+                      </div>
+                      <!-- <p>Area: <span id="tri-area"></span><span> cm<sup>2</sup></p> -->
+                       
+
+                      <div class="card-actions justify-center">
+                        <button class="btn btn-primary w-full" onclick="caltriArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -121,6 +159,7 @@
               </div>
          </div>
     </main>
-    
+    <script src="scripts/triangle-cal.js"></script>
+    <script src="scripts/rectangle-cal.js"></script>
 </body>
 </html>
