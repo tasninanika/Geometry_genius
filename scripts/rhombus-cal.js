@@ -11,5 +11,4 @@ function calrhoArea(){
     
     // calculate area
     const area = 0.5 * D1 * D2;
-    console.log(area);
 }
