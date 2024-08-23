@@ -9,6 +9,23 @@ function calrecArea(){
     const recLtext = recL.value;
     const length = parseFloat(recLtext);
 
+    if (isNaN(width) || width <= 0) {
+        alert("Please enter a valid positive number for the base.");
+        return;
+    }
+    if (isNaN(length) || length <= 0) {
+        alert("Please enter a valid positive number for the height.");
+        return;
+    }
+
     // calculate area
     const area = width * length;
+
+    // Show area
+    const areaCal = document.getElementById('area-cal');
+    areaCal.innerHTML = `
+        <p>Area Of Rectangle: ${area} cm<sup>2</sup></p>
+    `;
+
+    
 }

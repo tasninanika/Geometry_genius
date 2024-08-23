@@ -6,12 +6,30 @@
     <title>Geometry Genius</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+      .font-inter{
+        font-family: "Inter", sans-serif;
+      }
+    </style>
 </head>
-<body class="m-8">
+<body class="m-8 font-inter">
     <header>
-
+      <div class="navbar bg-[#1090D81A] flex flex-col lg:flex-row gap-5 lg:gap-0 rounded-lg px-10 py-4">
+        <div class="flex-1">
+          <a class=" font-medium text-3xl"><span class="font-bold text-5xl">Interactive</span> <br>
+            Geometry Genius</a>
+        </div>
+        <div class="flex-none">
+          <button class="btn px-8 bg-[#1090D8] text-white font-bold text-xl btn-ghost">
+           Blog 
+          </button>
+        </div>
+      </div>
     </header>
-    <main>
+    <main class="my-24">
         <!-- main content container -->
          <div class="flex flex-col md:flex-row">
             <!-- shape card container -->
@@ -138,8 +156,8 @@
                   </div>
              </div>
              <!-- area calculation container -->
-              <div id="area-cal" class="w-80 border-2 border-gray-700 rounded-md h-[440px]">
-                <h3 class="text-xl text-center p-4">Area Calculation</h3>
+              <div id="area-cal" class="w-80 mt-10 lg:mt-0 border-2 border-gray-700 rounded-md h-[440px]">
+                <h3 class="text-xl text-center p-4">Area Calculation <hr></h3>
 
               </div>
          </div>
