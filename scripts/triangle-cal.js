@@ -8,31 +8,31 @@
 
 
 
-function caltriArea(){
-    // get base value
+function caltriArea() {
+    // Get base value
     const triB = document.getElementById('tri-b');
-    const triBtext = triB.value;
-    const base = parseFloat(triBtext);
+    const base = parseFloat(triB.value);
 
-    // get height value
+    // Get height value
     const triH = document.getElementById('tri-h');
-    const triHtext = triH.value;
-    const height = parseFloat(triHtext);
+    const height = parseFloat(triH.value);
     
-    // calculate area
+    // Validate input values
+    if (isNaN(base) || base <= 0) {
+        alert("Please enter a valid positive number for the base.");
+        return;
+    }
+    if (isNaN(height) || height <= 0) {
+        alert("Please enter a valid positive number for the height.");
+        return;
+    }
+
+    // Calculate area
     const area = 0.5 * base * height;
-    parseFloat(0.5 * base * height);
 
-    // show area
-    // const triArea = document.getElementById('tri-area');
-    // triArea.innerText = area;
-
-    
+    // Show area
     const areaCal = document.getElementById('area-cal');
-    const div = document.createElement('div');
-    div.innerHTML = `
-    <p>Area of Triangle:${area} cm<sup>2</sup></p>
+    areaCal.innerHTML = `
+        <p>Area of Triangle: ${area} cm<sup>2</sup></p>
     `;
-    areaCal.appendChild(div);
-
 }

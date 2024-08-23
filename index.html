@@ -15,9 +15,9 @@
         <!-- main content container -->
          <div class="flex flex-col md:flex-row">
             <!-- shape card container -->
-             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10">
                 <!-- triangle -->
-                <div class="card bg-base-100 w-80 shadow-xl py-5 hover:bg-pink-300">
+                <div class="card w-80 border-2 pt-8 hover:bg-pink-200">
                     <figure>
                       <img
                         src="images/triangle.png"
@@ -35,16 +35,16 @@
                        
 
                       <div class="card-actions justify-center">
-                        <button class="btn btn-primary w-full" onclick="caltriArea()">Calculate</button>
+                        <button class="btn bg-sky-500 text-white w-full" onclick="caltriArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
                   <!-- rectangle -->
-                  <div class="card bg-base-100 w-80 shadow-xl">
+                  <div class="card border-2 w-80 pt-8 hover:bg-orange-100">
                     <figure>
                       <img
                         src="images/rectangle.png"
-                        alt="Rectangle" />
+                        alt="Rectangle" class="h-40" />
                     </figure>
                     <div class="card-body">
                       <h2 class="card-title justify-center">Rectangle</h2>
@@ -54,16 +54,16 @@
                         <input id="rec-l" class="w-24 h-8 text-xl p-3 rounded-md bg-gray-100 focus:border-2" type="text" placeholder="l"><span class="mr-4 ml-2 text-gray-600">cm</span>                       
                       </div>
                       <div class="card-actions justify-center">
-                        <button class="btn btn-primary w-full" onclick="calrecArea()">Calculate</button>
+                        <button id="areaCal" class="btn bg-sky-500 w-full text-white" onclick="calrecArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
                   <!-- parallelogram -->
-                  <div class="card bg-base-100 w-80 shadow-xl">
+                  <div class="card w-80 border-2 hover:bg-blue-100 pt-8">
                     <figure>
                       <img
                         src="images/parallelogram.png"
-                        alt="Parallelogram" />
+                        alt="Parallelogram" class="h-40"/>
                     </figure>
                     <div class="card-body">
                       <h2 class="card-title justify-center">Parallelogram</h2>
@@ -73,16 +73,16 @@
                         <input id="para-h" class="w-24 h-8 text-xl p-3 rounded-md bg-gray-100 focus:border-2" type="text" placeholder="h"><span class="mr-4 ml-2 text-gray-600">cm</span>                      
                       </div>   
                       <div class="card-actions justify-center">
-                        <button class="btn btn-primary w-full" onclick="calparaArea()">Calculate</button>
+                        <button id="areaCal" class="btn bg-sky-500 text-white w-full" onclick="calparaArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
                   <!-- rhombus -->
-                  <div class="card bg-base-100 w-80 shadow-xl">
+                  <div class="card  w-80 pt-8 border-2 hover:bg-green-200">
                     <figure>
                       <img
                         src="images/rhombus.png"
-                        alt="Rhombus" />
+                        alt="Rhombus" class="h-40"/>
                     </figure>
                     <div class="card-body">
                       <h2 class="card-title justify-center">Rhombus</h2>
@@ -92,16 +92,16 @@
                         <input id="rho-d2" class="w-24 h-8 text-xl p-3 rounded-md bg-gray-100 focus:border-2" type="text" placeholder="d2"><span class="mr-4 ml-2 text-gray-600">cm</span>                      
                       </div>
                       <div class="card-actions justify-center">
-                        <button class="btn btn-primary w-full" onclick="calrhoArea()">Calculate</button>
+                        <button id="areaCal" class="btn bg-sky-500 text-white w-full" onclick="calrhoArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
                   <!-- pentagon -->
-                  <div class="card bg-base-100 w-80 shadow-xl">
+                  <div class="card w-80 border-2 pt-8 hover:bg-yellow-100">
                     <figure>
                       <img
                         src="images/pentagon.png"
-                        alt="pentagon" />
+                        alt="pentagon" class="h-40" />
                     </figure>
                     <div class="card-body">
                       <h2 class="card-title justify-center">Pentagon</h2>
@@ -112,16 +112,16 @@
                        
                       </div>
                       <div class="card-actions justify-center">
-                        <button class="btn btn-primary w-full" onclick="calpenArea()">Calculate</button>
+                        <button id="areaCal" class="btn bg-sky-500 text-white w-full" onclick="calpenArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
                   <!-- ellipse -->
-                  <div class="card bg-base-100 w-80 shadow-xl">
+                  <div class="card w-80 border-2 pt-8 hover:bg-purple-100">
                     <figure>
                       <img
                         src="images/ellipse.png"
-                        alt="ellipse" />
+                        alt="ellipse" class="h-40" />
                     </figure>
                     <div class="card-body">
                       <h2 class="card-title justify-center">Ellipse</h2>
@@ -132,14 +132,14 @@
                        
                       </div>
                       <div class="card-actions justify-center">
-                        <button class="btn btn-primary w-full" onclick="calellArea()">Calculate</button>
+                        <button id="areaCal" class="btn bg-sky-500 text-white w-full" onclick="calellArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
              </div>
              <!-- area calculation container -->
-              <div id="area-cal" class="w-96 border-2 border-gray-700 rounded-md">
-                <h3 class="text-3xl text-center p-4">Area Calculation</h3>
+              <div id="area-cal" class="w-80 border-2 border-gray-700 rounded-md h-[440px]">
+                <h3 class="text-xl text-center p-4">Area Calculation</h3>
 
               </div>
          </div>
