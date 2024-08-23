@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Genius</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="m-8">
     <header>
@@ -17,11 +17,11 @@
             <!-- shape card container -->
              <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- triangle -->
-                <div class="card bg-base-100 w-80 shadow-xl">
+                <div class="card bg-base-100 w-80 shadow-xl py-5 hover:bg-pink-300">
                     <figure>
                       <img
                         src="images/triangle.png"
-                        alt="Triangle" />
+                        alt="Triangle" class=" h-40"/>
                     </figure>
                     <div class="card-body">
                       <h2 class="card-title justify-center">Triangle</h2>
@@ -138,7 +138,7 @@
                   </div>
              </div>
              <!-- area calculation container -->
-              <div class="w-96 border-2 border-gray-700 rounded-md">
+              <div id="area-cal" class="w-96 border-2 border-gray-700 rounded-md">
                 <h3 class="text-3xl text-center p-4">Area Calculation</h3>
 
               </div>

@@ -21,8 +21,18 @@ function caltriArea(){
     
     // calculate area
     const area = 0.5 * base * height;
+    parseFloat(0.5 * base * height);
 
     // show area
     // const triArea = document.getElementById('tri-area');
     // triArea.innerText = area;
+
+    
+    const areaCal = document.getElementById('area-cal');
+    const div = document.createElement('div');
+    div.innerHTML = `
+    <p>Area of Triangle:${area} cm<sup>2</sup></p>
+    `;
+    areaCal.appendChild(div);
+
 }
