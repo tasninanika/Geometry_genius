@@ -3,11 +3,13 @@ function calrecArea(){
     const recW = document.getElementById('rec-w');
     const recWtext = recW.value;
     const width = parseFloat(recWtext);
+    recW.value = '';
 
     // get rec height
     const recL = document.getElementById('rec-l');
     const recLtext = recL.value;
     const length = parseFloat(recLtext);
+    recL.value = '';
 
     if (isNaN(width) || width <= 0) {
         alert("Please enter a valid positive number for the base.");

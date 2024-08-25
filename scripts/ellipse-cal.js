@@ -2,10 +2,12 @@ function calellArea(){
     const ellA = document.getElementById('ell-a');
     const ellAtext = ellA.value;
     const a = parseFloat(ellAtext);
+    ellA.value = '';
 
     const ellB = document.getElementById('ell-b');
     const ellBtext = ellB.value;
     const b = parseFloat(ellBtext);
+    ellB.value = '';
 
     // Validate input values
     if (isNaN(a) || a <= 0) {

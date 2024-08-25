@@ -12,10 +12,12 @@ function caltriArea() {
     // Get base value
     const triB = document.getElementById('tri-b');
     const base = parseFloat(triB.value);
+    triB.value = '';
 
     // Get height value
     const triH = document.getElementById('tri-h');
     const height = parseFloat(triH.value);
+    triH.value = '';
     
     // Validate input values
     if (isNaN(base) || base <= 0) {
