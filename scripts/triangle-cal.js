@@ -33,6 +33,6 @@ function caltriArea() {
     // Show area
     const areaCal = document.getElementById('area-cal');
     areaCal.innerHTML = `
-        <p>Area of Triangle: ${area} cm<sup>2</sup></p>
+        <p>Triangle: ${area} cm<sup>2</sup></p>
     `;
 }

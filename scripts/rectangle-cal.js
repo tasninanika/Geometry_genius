@@ -24,7 +24,7 @@ function calrecArea(){
     // Show area
     const areaCal = document.getElementById('area-cal');
     areaCal.innerHTML = `
-        <p>Area Of Rectangle: ${area} cm<sup>2</sup></p>
+        <p>Rectangle: ${area} cm<sup>2</sup></p>
     `;
 
     
